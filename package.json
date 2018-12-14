@@ -4,7 +4,7 @@
   "description": "https://obniz.io/",
   "main": "app.js",
   "scripts": {
-    "start": "node src/app.js",
+    "start": "babel-node src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +21,7 @@
     "obniz": "^1.14.1"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-eslint": "^10.0.1",
     "babel-plugin-syntax-flow": "^6.18.0",
     "eslint": "^5.10.0",
