@@ -1,3 +1,5 @@
+/* @flow */
+
 import Obniz from 'obniz'
 import Firebase from './firebase'
 
@@ -10,5 +12,5 @@ obniz.onconnect = async function() {
 
   // firebaseにデータを登録
   const fb = new Firebase()
-  fb.update()
+  fb.update(5)
 }

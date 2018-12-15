@@ -1,9 +1,11 @@
+/* @flow */
+
 // import firebase from 'firebase'
 import * as admin from 'firebase-admin'
 import serviceAccount from '../config/private.json'
 
 const database = 'hackday2018-35675'
-const key = 'data'
+const key = 'weight'
 
 class Firebase {
   constructor() {
@@ -19,11 +21,11 @@ class Firebase {
     }
   }
 
-  update() {
+  update(value: number) {
     const db = admin.database()
     const ref = db.ref(key)
     try {
-      ref.update({ weight: 5 })
+      ref.update({ value: value, ration: 50 })
     } catch (e) {
       console.log(e.message)
     }
