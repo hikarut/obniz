@@ -36,13 +36,14 @@ class Firebase {
    * @param {number} value 重さ
    */
   update(weight: number, percent: number) {
-    const db = admin.database()
+    // const db = admin.database()
+    const db = firebase.database()
     const ref = db.ref(key)
     try {
       // 重さと割合を登録
       const json = {
         device100: {
-          // name: 'hikaru',
+          name: '日本酒',
           ratio: percent,
           weight: weight
         }

@@ -7,7 +7,7 @@
  * @return {number} weight 重さ
  */
 export function press2weight(press: number): number {
-  const defaultPress = 34
+  const defaultPress = 0
   // const area = 18.5955
   const area = 8.834
   const gravity = 9.8
@@ -21,6 +21,6 @@ export function press2weight(press: number): number {
  * @return {number} percent 割合
  */
 export function weight2percent(weight: number): number {
-  const fullWeight = 100
+  const fullWeight = 490
   return Math.round((weight / fullWeight) * 100)
 }
