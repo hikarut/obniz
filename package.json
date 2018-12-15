@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/hikarut/obniz#readme",
   "dependencies": {
+    "firebase": "^5.7.0",
+    "firebase-admin": "^6.4.0",
     "obniz": "^1.14.1"
   },
   "devDependencies": {
