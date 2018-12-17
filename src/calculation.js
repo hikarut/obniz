@@ -21,6 +21,6 @@ export function press2weight(press: number): number {
  * @return {number} percent 割合
  */
 export function weight2percent(weight: number): number {
-  const fullWeight = 490
+  const fullWeight = 480
   return Math.round((weight / fullWeight) * 100)
 }

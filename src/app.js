@@ -5,7 +5,7 @@ import Firebase from './firebase'
 // import { press2weight } from './weight'
 import * as calculation from './calculation'
 
-const obniz = new Obniz('6201-0563')
+const obniz = new Obniz('key')
 const fb = new Firebase()
 
 // 起動
@@ -38,9 +38,9 @@ obniz.onconnect = async () => {
 
     // firebaseにデータを登録
     fb.update(weight, percent)
-    press = 0
   }
-  setInterval(measure, 5000)
+  // setInterval(measure, 5000)
+  setInterval(measure, 2000)
 
   // 圧力センサの値に変化があった場合
   // pressure.onchange = press => {

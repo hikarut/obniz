@@ -36,8 +36,8 @@ class Firebase {
    * @param {number} value 重さ
    */
   update(weight: number, percent: number) {
-    // const db = admin.database()
-    const db = firebase.database()
+    const db = admin.database()
+    // const db = firebase.database()
     const ref = db.ref(key)
     try {
       // 重さと割合を登録
